@@ -16,6 +16,7 @@ foreach (source ${sources})
 endforeach ()
 
 # make a directory for binary inputs and outputs
+file (MAKE_DIRECTORY "${CMAKE_SOURCE_DIR}/inputs")
 file (MAKE_DIRECTORY "${CMAKE_BINARY_DIR}/bin/inputs")
 file (MAKE_DIRECTORY "${CMAKE_BINARY_DIR}/bin/outputs")
 

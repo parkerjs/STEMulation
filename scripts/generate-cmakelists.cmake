@@ -1,12 +1,7 @@
 cmake_minimum_required (VERSION 3.1.0)
 
 # python includes
-include (FindPythonInterp)
-include_directories (${PYTHON_INCLUDE_DIRS})
-
-# find required Python libraries
-find_package (PythonLibs REQUIRED)
-find_package (PythonInterp REQUIRED)
+find_package (Python REQUIRED)
 
 # define a macro to list all subdirectories a root directory
 macro (subdirlist result curdir)
